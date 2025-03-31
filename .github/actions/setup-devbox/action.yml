@@ -1,0 +1,17 @@
+name: "Setup CI Environment"
+description: "Sets up devbox, homebrew, and UDS CLI"
+
+runs:
+  using: "composite"
+  steps:
+    - name: devbox installer
+      uses: jetify-com/devbox-install-action@734088efddca47cf44ff8a09289c6d0e51b73218 # v0.12.0
+      with:
+        enable-cache: true
+
+    - name: Setup devbox path
+      run: |
+        # Add devbox bin paths to GITHUB_PATH
+        echo "${{ github.workspace }}/.devbox/nix/profile/default/bin" >> $GITHUB_PATH
+        echo "${{ github.workspace }}/.devbox/virtenv/runx/bin" >> $GITHUB_PATH
+      shell: bash
