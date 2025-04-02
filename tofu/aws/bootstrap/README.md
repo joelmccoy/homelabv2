@@ -26,7 +26,6 @@
 
 | Name | Type |
 |------|------|
-| [aws_kms_key.bootstrap_key](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kms_key) | resource |
 | [aws_iam_policy_document.terraform_state_access](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 
 ## Inputs
