@@ -10,10 +10,7 @@ Accepted
 
 For effective CI/CD in the homelab environment, we need GitHub Actions runners that have direct access to the internal homelab network. This access is essential for:
 
-1. Deploying infrastructure changes to Proxmox and other internal services
-2. Running integration tests against internal services
-3. Managing the lifecycle of applications and infrastructure within the homelab
-4. Performing automated backups and maintenance tasks
+Deploying infrastructure changes to Proxmox and other internal services
 
 Public GitHub-hosted runners cannot access our private network, and setting up complex VPN tunnels introduces unnecessary complexity and potential security issues.
 

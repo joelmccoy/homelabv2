@@ -20,8 +20,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_github_runner_1"></a> [github\_runner\_1](#module\_github\_runner\_1) | ../modules/github-runner | n/a |
-| <a name="module_github_runner_2"></a> [github\_runner\_2](#module\_github\_runner\_2) | ../modules/github-runner | n/a |
+| <a name="module_github_runner"></a> [github\_runner](#module\_github\_runner) | ../modules/github-runner | n/a |
 
 ## Resources
 
@@ -39,6 +38,5 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_runner_1"></a> [runner\_1](#output\_runner\_1) | Information about GitHub runner 1 |
-| <a name="output_runner_2"></a> [runner\_2](#output\_runner\_2) | Information about GitHub runner 2 |
+| <a name="output_runners"></a> [runners](#output\_runners) | Information about all GitHub runners |
 <!-- END OF PRE-COMMIT-OPENTOFU DOCS HOOK -->
