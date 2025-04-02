@@ -22,6 +22,14 @@ terraform {
     }
   }
   required_version = "~> 1.9.0"
+
+  backend "s3" {
+    bucket         = "homelabv2-tf-state-20250402193806856500000001"
+    key            = "proxmox/githug-runner/terraform.tfstate"
+    region         = "us-west-2"
+    dynamodb_table = "homelabv2-tf-state-lock"
+    encrypt        = true
+  }
 }
 
 provider "proxmox" {
