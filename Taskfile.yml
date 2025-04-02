@@ -10,3 +10,16 @@ tasks:
     desc: Run pre-commit hooks on all files
     cmds:
       - pre-commit run --all-files
+
+  deploy-gh-runner:
+    desc: Deploy the github runners
+    dir: "tofu/proxmox/github-runner"
+    cmds:
+      - tofu init -upgrade
+      - tofu apply --auto-approve
+
+  destroy-gh-runner:
+    desc: Destroy the github runners
+    dir: "tofu/proxmox/github-runner"
+    cmds:
+      - tofu destroy --auto-approve
