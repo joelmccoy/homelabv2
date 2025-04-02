@@ -12,7 +12,7 @@ This repo serves as the home base for my homelab exploration. It's my public not
 
 ### 🧠 Goals
 
-- ✅ **Play with cool tools** — Kubernetes, Proxmox, Talos, OpenTofu, Atlantis, Istio, Argo CD, Helm, and more
+- ✅ **Play with cool tools** — Kubernetes, Proxmox, Talos, OpenTofu, Digger, Istio, Argo CD, Helm, and more
 - ✅ **Declaratively manage everything** — GitOps, Infrastructure as Code (IaC), and Configuration as Code (CaC)
 - ✅ **Use AI to write code & docs** — Treating AI as a pair programming buddy
 - ✅ **Host real services** — Things I'll actually use day-to-day
@@ -26,7 +26,7 @@ This serves two purposes:
 1. **AI Context** – Future code changes or generations will be AI-informed based on historical decisions.
 2. **Self-Documentation** – So I can look back and understand why I made a particular call.
 
-> 💡 ADRs live in the `/docs/adr` directory. They are short, focused, and written in plain English.
+> 💡 ADRs live in the `/adrs` directory. They are short, focused, and written in plain English.
 
 ## 🖥️ Current Hardware Setup
 
@@ -43,6 +43,8 @@ This serves two purposes:
 - **Kubernetes**  → Container orchestration
 - **TALOS** → Evaluating for immutable, secure k8s OS
 - **Proxmox** → Hypervisor and VM orchestration
+- **OpenTofu** → Declarative infra
+- **Digger** → OpenTofu CI/CD automation
 - **Argo CD** → GitOps continuous deployment
 - **Helm** → App templating
 - **Istio** → Service mesh and ingress
@@ -59,6 +61,8 @@ I'll be using AI (like ChatGPT, Claude, Windsurf, Avante) not just for troublesh
 ## 📅 Roadmap
 
 - [x] Setup Dev Environment
-- [ ] Finish Proxmox setup
+- [x] Deploy Github Private Runners
+- [] Setup Digger for Opentofu CI/CD
+- [ ] Setup Proxmox Cluster with additional hardware
 - [ ] Deploy Single Node Talos Cluster (with OpenTofu)
 - [ ] Implement GitOps with Argo CD
