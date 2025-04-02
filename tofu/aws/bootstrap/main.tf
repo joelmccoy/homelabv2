@@ -29,7 +29,7 @@ module "lock_table" {
   source  = "terraform-aws-modules/dynamodb-table/aws"
   version = "4.3.0"
 
-  name     = var.dyanmodb_table_name
+  name     = var.dynamodb_table_name
   hash_key = "LockID"
 
   attributes = [

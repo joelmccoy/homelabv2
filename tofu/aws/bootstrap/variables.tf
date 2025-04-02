@@ -4,7 +4,7 @@ variable "bucket_prefix" {
   default     = "homelabv2-tf-state-"
 }
 
-variable "dyanmodb_table_name" {
+variable "dynamodb_table_name" {
   description = "The name of the dynamodb table to create for state locking"
   type        = string
   default     = "homelabv2-tf-state-lock"
