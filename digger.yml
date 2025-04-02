@@ -1,4 +1,4 @@
 projects:
-  - name: aws/bootstrap
+  - name: aws-bootstrap
     dir: tofu/aws/bootstrap
     opentofu: true
