@@ -19,5 +19,5 @@ variable "github_oidc_role_name" {
 variable "github_repositories" {
   description = "The list of github repositories to grant access to in the IAM OIDC role"
   type        = list(string)
-  default     = ["joelmccoy/homelab2"]
+  default     = ["joelmccoy/homelabv2"]
 }

@@ -35,7 +35,7 @@
 | <a name="input_bucket_prefix"></a> [bucket\_prefix](#input\_bucket\_prefix) | The prefix to apply to the s3 state bucket name | `string` | `"homelabv2-tf-state-"` | no |
 | <a name="input_dynamodb_table_name"></a> [dynamodb\_table\_name](#input\_dynamodb\_table\_name) | The name of the dynamodb table to create for state locking | `string` | `"homelabv2-tf-state-lock"` | no |
 | <a name="input_github_oidc_role_name"></a> [github\_oidc\_role\_name](#input\_github\_oidc\_role\_name) | The name of the role to create for github oidc | `string` | `"github-oidc-role"` | no |
-| <a name="input_github_repositories"></a> [github\_repositories](#input\_github\_repositories) | The list of github repositories to grant access to in the IAM OIDC role | `list(string)` | <pre>[<br/>  "joelmccoy/homelab2"<br/>]</pre> | no |
+| <a name="input_github_repositories"></a> [github\_repositories](#input\_github\_repositories) | The list of github repositories to grant access to in the IAM OIDC role | `list(string)` | <pre>[<br/>  "joelmccoy/homelabv2"<br/>]</pre> | no |
 
 ## Outputs
 
