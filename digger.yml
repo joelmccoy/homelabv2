@@ -2,9 +2,3 @@ projects:
   - name: aws/bootstrap
     dir: tofu/aws/bootstrap
     opentofu: true
-workflows:
-  default:
-    plan:
-      steps:
-        - init
-        - plan
