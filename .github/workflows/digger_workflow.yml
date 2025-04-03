@@ -40,3 +40,4 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GODEBUG: "netdns=go+v4" # force ipv4
